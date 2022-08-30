@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(235, 214, 255);
+}
+ h1 , h2 , h3 {
+    font-family:Arial, Helvetica, sans-serif;
+
+ }
+ /* navegaçao */
+
+ nav{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: rgb(235, 214, 255);
+}
+ nav > a {
+    text-decoration: none;
+    font-weight:800;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style:none;
+    padding: 0;
+    width: 100%;
+ }
+ nav ul li{
+    text-align: center;
+    width: 100%;
+
+ }
+ nav ul li a {
+    display: inline-block;
+    padding: 10px ;
+    width: 100% ;
+    text-decoration:none ;
+   
+ }
+ /* cabeçalho */
+
+
+ header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+   text-align: center;
+   background-color:rgb(200, 144, 253) ;
+   padding: 20px;
+   border-radius: 30px;
+ }
+
+ header p{
+ margin-bottom: 2em;
+
+ }
+ 
+ section {
+
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+       text-align: center;
+       background-color: rgb(200, 144, 253);
+       padding: 20px;
+       border-radius: 30px;
+     }
+
+     div{
+        margin-left: 430PX;	
+        margin-top: 10px;
+        
+     }
+ /* rodape */
+
+@media screen and (min-width: 768px){
+    /* nav */
+    nav{
+        flex-direction:row;
+        justify-content: space-around;
+    }
+    nav ul{
+        flex-direction: row;
+        width: 70%;
+    }
+ /* cabeçalho */
+ header {
+    height: 600px;
+    height: 60vh;
+ }
+}
